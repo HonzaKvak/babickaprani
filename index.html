@@ -1,1 +1,210 @@
-ahoj
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>Pro babičku</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(160deg, #fff5f8 0%, #ffe3ec 45%, #ffd1e0 100%);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+    overflow-x: hidden;
+  }
+
+  .card {
+    max-width: 640px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 30px 10px;
+  }
+
+  .roses-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+
+  .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.2rem;
+    color: #c2185b;
+    margin: 10px 0 4px 0;
+    text-shadow: 1px 1px 2px rgba(194,24,91,0.15);
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #d16a94;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .message {
+    font-size: 1.35rem;
+    line-height: 2;
+    color: #5a3745;
+    font-weight: 600;
+    margin: 20px 0 30px 0;
+    white-space: pre-line;
+  }
+
+  .icecream-row {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 20px 0 10px 0;
+  }
+
+  .signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.6rem;
+    color: #ad1457;
+    margin-top: 25px;
+  }
+
+  .from {
+    font-size: 0.95rem;
+    color: #a05070;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+
+  .rose { width: 70px; height: auto; filter: drop-shadow(0 3px 5px rgba(0,0,0,0.15)); }
+  .rose.small { width: 44px; }
+  .icecream { width: 60px; height: auto; filter: drop-shadow(0 3px 5px rgba(0,0,0,0.15)); }
+
+  .bottom-roses {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(2deg); }
+  }
+  .rose { animation: float 4s ease-in-out infinite; }
+  .rose:nth-child(2) { animation-delay: 0.5s; }
+  .rose:nth-child(3) { animation-delay: 1s; }
+  .rose:nth-child(4) { animation-delay: 1.5s; }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="roses-row">
+    <svg class="rose" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 78 C50 100 47 115 42 135" stroke="#5aa845" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M46 108 C36 106 30 112 30 120 C38 120 44 116 46 108 Z" fill="#5aa845"/>
+      <ellipse cx="50" cy="45" rx="32" ry="32" fill="#eb789e"/>
+      <ellipse cx="50" cy="45" rx="24" ry="24" fill="#e0507a"/>
+      <ellipse cx="50" cy="45" rx="16" ry="16" fill="#c93866"/>
+      <path d="M50 45 C40 35 30 38 28 28 C40 26 46 34 50 45 Z" fill="#eb789e" opacity="0.9"/>
+      <path d="M50 45 C60 35 70 38 72 28 C60 26 54 34 50 45 Z" fill="#eb789e" opacity="0.9"/>
+      <path d="M50 45 C42 55 32 55 28 65 C40 68 46 60 50 45 Z" fill="#c93866" opacity="0.85"/>
+      <path d="M50 45 C58 55 68 55 72 65 C60 68 54 60 50 45 Z" fill="#c93866" opacity="0.85"/>
+      <ellipse cx="50" cy="45" rx="9" ry="9" fill="#f7a3c0"/>
+    </svg>
+    <svg class="rose" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 78 C50 100 53 115 58 135" stroke="#4c8c3c" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M54 108 C64 106 70 112 70 120 C62 120 56 116 54 108 Z" fill="#4c8c3c"/>
+      <ellipse cx="50" cy="45" rx="34" ry="34" fill="#f0759a"/>
+      <ellipse cx="50" cy="45" rx="25" ry="25" fill="#d6396a"/>
+      <ellipse cx="50" cy="45" rx="16" ry="16" fill="#b82858"/>
+      <path d="M50 45 C40 35 30 38 28 28 C40 26 46 34 50 45 Z" fill="#f0759a" opacity="0.9"/>
+      <path d="M50 45 C60 35 70 38 72 28 C60 26 54 34 50 45 Z" fill="#f0759a" opacity="0.9"/>
+      <path d="M50 45 C42 55 32 55 28 65 C40 68 46 60 50 45 Z" fill="#b82858" opacity="0.85"/>
+      <path d="M50 45 C58 55 68 55 72 65 C60 68 54 60 50 45 Z" fill="#b82858" opacity="0.85"/>
+      <ellipse cx="50" cy="45" rx="9" ry="9" fill="#f8b0c6"/>
+    </svg>
+    <svg class="rose" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 78 C50 100 47 115 42 135" stroke="#5aa845" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M46 108 C36 106 30 112 30 120 C38 120 44 116 46 108 Z" fill="#5aa845"/>
+      <ellipse cx="50" cy="45" rx="32" ry="32" fill="#eb789e"/>
+      <ellipse cx="50" cy="45" rx="24" ry="24" fill="#e0507a"/>
+      <ellipse cx="50" cy="45" rx="16" ry="16" fill="#c93866"/>
+      <path d="M50 45 C40 35 30 38 28 28 C40 26 46 34 50 45 Z" fill="#eb789e" opacity="0.9"/>
+      <path d="M50 45 C60 35 70 38 72 28 C60 26 54 34 50 45 Z" fill="#eb789e" opacity="0.9"/>
+      <path d="M50 45 C42 55 32 55 28 65 C40 68 46 60 50 45 Z" fill="#c93866" opacity="0.85"/>
+      <path d="M50 45 C58 55 68 55 72 65 C60 68 54 60 50 45 Z" fill="#c93866" opacity="0.85"/>
+      <ellipse cx="50" cy="45" rx="9" ry="9" fill="#f7a3c0"/>
+    </svg>
+  </div>
+
+  <div class="title">Všechno nejlepší!</div>
+  <div class="subtitle">✿ k svátku pro nejlepší babičku ✿</div>
+
+  <div class="message">Hodně štěstí milá babi,
+hodně zdraví a hodně moci.
+Kamarádství a co dál,
+hodně chutí a odpočinku. 🌷</div>
+
+  <div class="icecream-row">
+    <svg class="icecream" viewBox="0 0 60 105" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22 58 L30 98 L38 58 Z" fill="#e8c39e" stroke="#c99a68" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M23.5 64 L36.5 64 M25 72 L35 72 M26.5 80 L33.5 80" stroke="#c99a68" stroke-width="1"/>
+      <path d="M13 55 C10 40 16 26 30 26 C44 26 50 40 47 55 C40 62 20 62 13 55 Z" fill="#f28fb0"/>
+      <path d="M15 44 C13 32 19 20 30 20 C41 20 47 32 45 44 C38 50 22 50 15 44 Z" fill="#f7aac6"/>
+      <path d="M17 33 C16 24 21 15 30 15 C39 15 44 24 43 33 C37 38 23 38 17 33 Z" fill="#fbc9dc"/>
+      <ellipse cx="30" cy="14" rx="5" ry="5" fill="#fde3ee"/>
+    </svg>
+    <svg class="icecream" viewBox="0 0 60 105" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22 58 L30 98 L38 58 Z" fill="#e8c39e" stroke="#c99a68" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M23.5 64 L36.5 64 M25 72 L35 72 M26.5 80 L33.5 80" stroke="#c99a68" stroke-width="1"/>
+      <path d="M13 55 C10 40 16 26 30 26 C44 26 50 40 47 55 C40 62 20 62 13 55 Z" fill="#e0507a"/>
+      <path d="M15 44 C13 32 19 20 30 20 C41 20 47 32 45 44 C38 50 22 50 15 44 Z" fill="#f28fb0"/>
+      <path d="M17 33 C16 24 21 15 30 15 C39 15 44 24 43 33 C37 38 23 38 17 33 Z" fill="#f7aac6"/>
+      <ellipse cx="30" cy="14" rx="5" ry="5" fill="#fbc9dc"/>
+    </svg>
+  </div>
+
+  <div class="from">S láskou</div>
+  <div class="signature">Všechno nejlepší babičce přeje Kubišínek</div>
+
+  <div class="bottom-roses">
+    <svg class="rose small" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 78 C50 100 47 115 42 135" stroke="#5aa845" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="50" cy="45" rx="32" ry="32" fill="#eb789e"/>
+      <ellipse cx="50" cy="45" rx="24" ry="24" fill="#e0507a"/>
+      <ellipse cx="50" cy="45" rx="16" ry="16" fill="#c93866"/>
+      <path d="M50 45 C40 35 30 38 28 28 C40 26 46 34 50 45 Z" fill="#eb789e" opacity="0.9"/>
+      <path d="M50 45 C60 35 70 38 72 28 C60 26 54 34 50 45 Z" fill="#eb789e" opacity="0.9"/>
+      <ellipse cx="50" cy="45" rx="9" ry="9" fill="#f7a3c0"/>
+    </svg>
+    <svg class="rose small" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 78 C50 100 53 115 58 135" stroke="#4c8c3c" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="50" cy="45" rx="34" ry="34" fill="#f0759a"/>
+      <ellipse cx="50" cy="45" rx="25" ry="25" fill="#d6396a"/>
+      <ellipse cx="50" cy="45" rx="16" ry="16" fill="#b82858"/>
+      <path d="M50 45 C60 35 70 38 72 28 C60 26 54 34 50 45 Z" fill="#f0759a" opacity="0.9"/>
+      <path d="M50 45 C58 55 68 55 72 65 C60 68 54 60 50 45 Z" fill="#b82858" opacity="0.85"/>
+      <ellipse cx="50" cy="45" rx="9" ry="9" fill="#f8b0c6"/>
+    </svg>
+    <svg class="rose small" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 78 C50 100 47 115 42 135" stroke="#5aa845" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <ellipse cx="50" cy="45" rx="32" ry="32" fill="#eb789e"/>
+      <ellipse cx="50" cy="45" rx="24" ry="24" fill="#e0507a"/>
+      <ellipse cx="50" cy="45" rx="16" ry="16" fill="#c93866"/>
+      <path d="M50 45 C42 55 32 55 28 65 C40 68 46 60 50 45 Z" fill="#c93866" opacity="0.85"/>
+      <path d="M50 45 C58 55 68 55 72 65 C60 68 54 60 50 45 Z" fill="#c93866" opacity="0.85"/>
+      <ellipse cx="50" cy="45" rx="9" ry="9" fill="#f7a3c0"/>
+    </svg>
+  </div>
+
+</div>
+
+</body>
+</html>
